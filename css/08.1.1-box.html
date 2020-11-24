@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .clearfix:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    
+    .clearfix {
+        *zoom: 1;
+    }
+    
+    .three {
+        background-color: pink;
+        width: 700px;
+        height: 800px;
+    }
+    
+    .box {
+        width: 1200px;
+        height: 460px;
+        margin: 0 auto;
+        background-color: palevioletred;
+    }
+    
+    .left {
+        float: left;
+        width: 230px;
+        height: 460px;
+    }
+</style>
+
+<body>
+    <div class="box clearfix">
+        <div class="left">
+            1
+        </div>
+        <div class="three">
+            3
+        </div>
+</body>
+
+</html>

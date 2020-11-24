@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本属性</title>
+</head>
+<style>
+    /* 文本颜色有三种表达方式，十六进制编码，rgb编码，系统默认颜色单词 */
+    
+    div {
+        color: #9696d6;
+        color: rgb(209, 224, 224);
+        color: cadetblue;
+        /* 对齐文本，align属性用于设置内容的水平对齐方式 ，有right，center，left */
+        text-align: center;
+    }
+    
+    p {
+        /* text-decoration属性用来装饰文本，可给文本加下划线，删除线，上划线,也可以用来删除下划线 */
+        /* none默认，无
+    underline下划线
+    overline上划线
+    line-through删除线 */
+        text-decoration: line-through;
+        /* 缩进文本，text-indent属性用来指定文本第一行的缩进，及缩进多少 */
+        /* 其中的em是一个相对单位，一个em就是一个汉字大小 ，也可以使用px */
+        text-indent: 2em;
+        /* 行间距，line-height属性用于设置行间距里,同时控制上间距和下间距，初始行距16px */
+        line-height: 3em
+    }
+</style>
+
+<body>
+    <p>每天都会有奇奇怪怪的文案涌上心头</p>
+    <p>所以每天都会做甜甜的梦</p>
+    <div>夏夜晚风,晚风温柔.</div>
+    <p>当我抬头寻找云的踪迹，你像神明一样慷慨地将光芒洒向我</p>
+</body>
+
+</html>

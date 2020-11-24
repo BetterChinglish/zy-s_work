@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>圆角边框</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    div {
+        padding: 70px;
+        margin: 30px;
+        background-color: #f5f5f5ff;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+    
+    span {
+        padding: 20px;
+        background-color: #fff;
+        margin-right: 5px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div>
+        <span>今天</span><span>也要</span><span>开心</span>
+    </div>
+    <div>border-radius表示圆角边框的⚪的半径</div>
+    <div>也可以用百分比表示，比如50%就是宽度和高度的一半，等价于1.
+        <br>可以分开表示每一个角
+        <br>border-top-left-tadius 左上角（以此类推）
+        <br>简写只表明两个数值时表示左上角和其对角，右上角和其对角。
+    </div>
+    <div>设置圆角矩形则将半径设置为高度的一半。</div>
+</body>
+
+</html>

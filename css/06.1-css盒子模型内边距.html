@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+</head>
+<style>
+    .nav {
+        border-top: 2px solid olive;
+        border-bottom: 1px solid white;
+        background-color: white;
+        line-height: 41px;
+    }
+    
+    .nav a {
+        display: inline-block;
+        height: 41px;
+        padding: 0 20px;
+        font-size: 17px;
+        color: rgba(37, 138, 99, 0.678);
+        text-decoration: none;
+    }
+    
+    .nav a:hover {
+        background-color: #eeeeee;
+        color: thistle;
+    }
+</style>
+
+<body>
+    <div>盒子模型内边距padding，（内边距可以撑开盒子）</div>
+    <div>padding有padding-left，padding-bottom，padding-right，padding-top</div>
+    <div>padding简写属性</div>
+    <div>padding：5px ；一个值 代表上下左右都有5像素内边距
+        <br>padding：5px 10px；两个值 代表上下内边距5像素 左右内边距为10像素
+        <br>padding：5px 10px 20px；三个值 代表上内边距5像素 左右内边距10px 下内边距20px
+        <br>四个值则分别代表，上，顺时针方向
+    </div>
+    <div class="nav">
+        <a href="#">星期一</a>
+        <a href="#">星期二</a>
+        <a href="#">小企鹅</a>
+        <a href="#">大白熊</a>
+        <a href="#">星期五</a>
+
+    </div>
+    <P>
+        如果盒子本身没有指定width和height属性，此时padding不会撑开盒子的大小
+    </P>
+</body>
+
+</html>

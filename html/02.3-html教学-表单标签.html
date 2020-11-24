@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+
+<body>
+    <!-- 一个完整的表单通常由 表单域，表单控件，提示消息 构成 -->
+    <!-- 表单域是一个包含表单单元的区域 ，以实现用户信息的收集，并把信息提交给服务器-->
+
+
+    <!-- 这是一个完整的表单域，action是表单递交的处理网页位置，name是表单域名字 -->
+    <!-- <input type="text（属性值）">输入表单元素 -->
+
+    <form action="demo.php" method="POST" name="1">
+
+        <!-- button可点击按钮 -->
+        <a href="https://wenku.baidu.com/topic/gaokao2020/zhenti?year=2020&channel=pc_aladdin_zhenti_totle_title&t=1594697542">
+            <input type="button" value="开始答题"></a> <br>
+        <!-- checkbox复选框 ，相较于单选框-->
+        兴趣爱好：1<input type="checkbox" name="hobby" checked="checked">1<input type="checkbox" name="hobby">1<input type="checkbox" name="hobby">1<input type="checkbox" name="hobby"><br>
+        <!-- file输入字段或“浏览”按钮，供文件上传 -->
+        <input type="file">
+        <!-- hidden隐藏的输入字段 -->
+        <!-- image图像形式的提交按钮 -->
+        <!-- password输入密码字段，会被掩码 -->
+        密码：<input type="password" name="pwd"><br>
+        <!-- radio单选按钮,需要有相对应的名字name才能够完成多选一 -->
+        性别：男<input type="radio" name="sex">女<input type="radio" name="sex" checked="checked"><br>
+        <!-- reset重置按钮 -->
+        <input type="reset" value="遗忘术">
+        <!-- submit提交按钮 -->
+        <input type="submit" value="答题结束"><br>
+        <!-- text 单行输入字段，默认20字符   -->
+        用户名：<input type="text " name="username " value="请输入用户名" maxlength="11"> <br>
+        <!-- label为input元素的定义标注，用于绑定一个表单元素，简而言之，扩大点击面积，增强用户体验 -->
+        <label for="xinqing">今天也要很开心</label>
+        <input type="radio" name="xinqing" id="xinqing">
+        <label for="xinqing2">因为今天也有爸爸在</label>
+        <input type="radio" name="xinqing" id="xinqing2">
+
+
+        <!-- 表单元素属性(主要给后台人员使用，前二)
+    name定义input元素的名称，单选和复选都要有相同的name值
+    value定义input元素的值，会出现在框框中！！！！
+    checked规定此input元素首次加载时应当被选中
+    maxlength规定输入字符的最大长度，只能为正整数 -->
+
+
+
+
+
+
+
+        <!-- <select name="" id=""></select>下拉表单元素 -->
+        为什么喜欢爸爸呢？
+        <select>
+             <option>1</option>
+             <option>爸爸笑起来好好看</option>
+             <option>爸爸超级暖</option>
+             <option>爸爸对崽崽超级好</option>
+             <option selected="selected">因为崽崽就是喜欢爸爸</option>
+             <!-- selected="selected"是初始默认选项 -->
+        </select>
+
+
+
+
+
+
+
+
+
+        <!-- <textarea name="" id="" cols="30" rows="10"></textarea> 文本域元素,当输入内容较多时使用,比如反馈留言-->
+        今日反馈:
+        <textarea rows="3" cols="20">
+
+
+             </textarea>
+        <!-- rows为显示行数,cols为每行中字符数,此处常用css -->
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

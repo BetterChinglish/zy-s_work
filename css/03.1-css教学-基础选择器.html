@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css语法规范,基础选择器</title>
+</head>
+<!-- css基础选择器，标签选择器 -->
+
+<body>
+    <p>生如夏花之灿烂</p>
+    <style>
+        p {
+            color: aquamarine;
+            font-size: x-large;
+        }
+    </style>
+
+
+
+    <!-- css基础选择器，类选择器,点后不可以用标签，数字，中文命名 -->
+    <style>
+        .red {
+            color: #b195e5;
+        }
+        
+        .blue {
+            color: #FFCCFF;
+        }
+        
+        .font {
+            font-size: 35px;
+        }
+    </style>
+    <ul>
+        <li class="red">披上星辰</li>
+        <li class="blue font">戴上荆棘王冠</li>
+        <li>手持锋利的宝剑</li>
+
+
+    </ul>
+
+    <!-- 类选择器-多类名，即一个标签多个类名，类名之间必须用空格隔开 -->
+
+
+
+
+    <!-- id选择器可以为标有特定的id的html元素指定特定的样式 -->
+    <!-- html元素用id属性来设置id选择器，css中id选择器用"#"来定义 ，使用方式和类选择器差不多,但是是一次性用品，就像身份证-->
+
+    <style>
+        #cha {
+            color: cadetblue;
+        }
+    </style>
+
+    <p id="cha">茶茶超可爱</p>
+
+
+
+    <!-- 通配符选择器用*定义，用于选择所有的标签 -->
+    <style>
+        * {
+            color: cornflowerblue;
+        }
+    </style>
+</body>
+
+</html>

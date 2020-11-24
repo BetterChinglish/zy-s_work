@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+</head>
+<style>
+        div {
+        width: 1500px;
+        height: 1000px;
+        background-color: rgba(243, 180, 180, 0.589);
+        background-image: url(2335.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        /* background: rgba(243, 180, 180, 0.589) url(2335.jpg) no-repeat center fixed; */
+        background: rgba(0, 0, 0, 0.1)
+</style>
+
+<body>
+    <div>
+        <br> 背景属性可以设置 背景颜色，背景图片，背景平铺，背景图片位置，背景图像固定等
+        <br> 一般情况下背景颜色默认值为透明transparent
+        <!-- background-color：transparent|color -->
+
+
+
+        <!-- 背景图片 -->
+
+
+        <br> 背景图片background-image实际开发用于logo或小图标装饰，便于控制位置
+        <!-- background-image：none|url（路径） -->
+
+
+
+        <!-- 背景平铺 -->
+
+
+        <br>背景平铺使用background-repeat属性,默认情况下都是平铺
+        <!-- background-repeat：repeat|no-repeat|repeat-x|repeat-y -->
+        <br>改变图片在背景中的位置使用background-position，其中参数代表坐标，可以使用方位名词和精确单位z
+        <!-- background-position：x y； -->
+
+        <!--参数是 方位名词 -->
+        <br>如果使用的是<strong>方位名词</strong>（top，center，bottom，left，right），则方位名词的先后顺序不影响表示
+        <br>如果只使用了一个方位名词，则系统默认居中显示
+
+        <!-- 参数是 精确单位 -->
+        <br>如果使用<strong>精确单位</strong>，则前者表示x，后者表示y，若只填写一项则表示x，另一项默认垂直居中(css3会接触z轴)
+
+        <!-- 参数是 混合单位 -->
+        <br>混合单位及二者的结合使用，是其中的x或y参数被方位名词代替
+
+        <!-- 背景图像固定（背景图像附着） -->
+        <br>background-attachment属性设置背景图像是否固定或者随着页面的其余部分滚动（后期可以制作视差滚动效果）
+        <!-- background-attachment：scroll（滚动，默认）|fixed（固定）； -->
+
+
+        <!-- 背景复合写法 -->
+        <br>背景里面，无顺序要求
+        <br>background：背景颜色，背景图片地址，背景平铺，背景图像滚动，背景图片位置
+
+        <!-- 背景色半透明 -->
+        <br>由css3提供,最后一个参数为alpha（透明度），取值范围在0~1之间
+        <!-- background：rgba(0, 0, 0, 0.3) -->
+    </div>
+
+
+
+</body>
+
+</html>

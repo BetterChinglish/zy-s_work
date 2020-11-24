@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 提前定义版心 */
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+
+/* 头部开始 */
+
+body {
+    background-color: #e0decd0e;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.header {
+    height: 42px;
+    /* background-color: rgb(248, 228, 228); */
+    /* 这个地方会层叠w里面的margin */
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+    /* background-color: rgb(252, 230, 222); */
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: rgb(184, 165, 124);
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid rgba(255, 94, 94, 0.795);
+}
+
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    /* background-color: rgba(247, 208, 125, 0.11); */
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid rgba(245, 150, 133, 0.897);
+    border-right: 0;
+    color: rgba(201, 164, 134, 0.418);
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: 1px solid rgba(245, 150, 133, 0.897);
+    background: url(search-buttom.png);
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+
+/* 头部结束 */
+
+
+/* 身体开始 */
+
+.banner {
+    height: 421px;
+    background-color: rgba(236, 211, 183, 0.377);
+}
+
+.banner .w {
+    height: 421px;
+    background: url(bg.png) no-repeat top center;
+}
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background-color: rgba(124, 76, 3, 0.171);
+}
+
+.subnav ul li {
+    height: 46px;
+    line-height: 45px;
+    padding: 0 20px 0;
+}
+
+.subnav ul li a {
+    font-size: 14px;
+    color: rgba(114, 75, 2, 0.918);
+}
+
+.subnav ul li a span {
+    float: right;
+}
+
+.subnav ul li a:hover {
+    color: seashell;
+    box-shadow: 2px 2px 5px 1px rgba(128, 69, 2, 0.418);
+}
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: rgba(192, 106, 25, 0.171);
+    /* 浮动的盒子不会有外边距合并的问题 */
+    margin-top: 50px;
+}
+
+.course h2 {
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.267);
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: tomato;
+}
+
+.bd {
+    padding: 0 20px;
+}
+
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #663d00a1;
+}
+
+.bd ul li h4 {
+    font-size: 16px;
+    color: rgb(112, 64, 0);
+}
+
+.bd ul li p {
+    font-size: 12px;
+    color: rgba(78, 42, 0, 0.473);
+}
+
+.bd .more {
+    display: block;
+    height: 38px;
+    border: 2px solid;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 38px;
+    color: rgba(87, 13, 0, 0.548);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* 身体结束 */
+
+
+/* 精品开始 */
+
+.goods {
+    height: 60px;
+    background-color: rgb(250, 243, 235);
+    box-shadow: 0 2px 3px 3px rgba(209, 101, 0, 0.1);
+    margin-top: 10px;
+    /* 行高可以继承 */
+    line-height: 60px;
+}
+
+.goods h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: rgba(201, 64, 1, 0.795);
+}
+
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: rgba(204, 59, 1, 0.596);
+    border-left: 1px solid rgba(156, 97, 42, 0.192);
+}
+
+.mod {
+    float: right;
+    margin-right: 30px;
+    font-size: 14px;
+    color: rgba(201, 64, 1, 0.795);
+}
+
+
+/* 精品结束 */
+
+
+/* 核心开始 */
+
+.box {
+    margin-top: 30px;
+}
+
+.box-hd {
+    height: 45px;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: rgb(189, 116, 116);
+}
+
+.box-hd a {
+    float: right;
+    font-size: 12px;
+    color: rgba(204, 99, 51, 0.808);
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+
+/* 撑开li的父盒子，让其不会换行 */
+
+.box-bd ul {
+    width: 1225px;
+}
+
+.box-bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: rgba(128, 105, 0, 0.068);
+    margin-right: 15px;
+}
+
+.box-bd ul li img {
+    width: 100%;
+}
+
+.box-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: rgba(126, 42, 3, 0.877);
+    font-weight: 400;
+}
+
+.box-bd .info {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: rgba(112, 63, 0, 0.541);
+}
+
+.box-bd .info span {
+    color: rgba(243, 102, 60, 0.719);
+}
+
+
+/* 核心结束 */
+
+
+/* 结尾开始 */
+
+.footer {
+    height: 415px;
+    background-color: rgba(211, 71, 6, 0.014);
+}
+
+.footer .w {
+    /* 外边距合并 将margin改成padding也可*/
+    padding-top: 35px;
+}
+
+.copyright {
+    float: left;
+}
+
+.links {
+    float: right;
+}
+
+.copyright p {
+    display: block;
+    font-size: 12px;
+    color: rgba(201, 64, 1, 0.795);
+    margin: 20px 0 15px 0;
+}
+
+.copyright .app {
+    display: block;
+    width: 220px;
+    height: 44px;
+    border: 1px solid #4701011c;
+    text-align: center;
+    line-height: 44px;
+    font-size: 16px;
+}
+
+.links dl dt {
+    font-size: 16px;
+    color: rgba(105, 48, 1, 0.733);
+    margin-bottom: 5px;
+}
+
+.links dl dd a {
+    font-size: 12px;
+    color: rgba(112, 60, 53, 0.342);
+}
+
+
+/* 尾部结束 */

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+    <style>
+        /* 后代选择器 */
+        
+        ol li {
+            color: cadetblue;
+        }
+        /* 子选择器 */
+        
+        li>div {
+            color: burlywood;
+        }
+        /* 并集选择器 */
+        
+        div,
+        p {
+            color: pink;
+        }
+        /* 伪类选择器，修改未访问的链接  a:link*/
+        
+        a:link {
+            color: #ededed;
+            text-decoration: none;
+        }
+        /* 伪类选择器，修改鼠标指针划过的链接 */
+        
+        a:hover {
+            color: cornflowerblue;
+        }
+        /* 伪类选择器，修改已被访问的链接  a:visited */
+        
+        a:visited {
+            color: yellowgreen;
+        }
+        /* 伪类选择器，修改正在点击的链接 */
+        
+        a:active {
+            color: whitesmoke;
+        }
+        /* focus伪类选择器 */
+        
+        input:focus {
+            background: rgb(213, 230, 175);
+            color: cadetblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <P>复合选择器是由两个或多个基础选择器通过不同方式组合而成的</P>
+    <p>常用复合选择器有：后代选择器，子选择器，并集选择器，伪类选择器</p>
+
+
+    <p>后代选择器，又称包含选择器，可以选择父元素里面的子元素</p>
+    <div>外层标签写在前面，内层标签写在里面，中间用空格分隔，当标签发生嵌套时，内层变成外层标签的后代，无论多少代，只要是后代就行</div>
+    <ol>
+        <li>zzzzzzzzzz
+            <div>yyyyy</div>
+        </li>
+        <li>zzzzzzzzzz
+            <p>yyyyy</p>
+        </li>
+    </ol>
+    <ul>
+        <li>zzzzzzzzz</li>
+        <li>zzzzzzzzz</li>
+    </ul>
+    <!-- 子选择器只能选择最近一级的子元素 -->
+    <p>并集选择器可以选择多组标签，定义相同样式</p>
+
+    <!-- 伪类选择器可以为某些选择器添加特殊效果，比如为链接添加特殊效果 -->
+    <a href="#">小猪佩奇</a>
+
+
+
+    <!-- 链接伪类选择器使用注意事项 -->
+    <div>按照link-visited-hover-active的顺序来写 </div>
+    <div>链接在浏览器中都具有默认样式，需要单独指定样式</div>
+
+
+
+
+    <!-- focus伪类选择器用于选取获得焦点（光标）的表单元素 -->
+    <!-- 一般情况下input类表单元素才能获取，这个选择器主要针对表单元素 -->
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+
+
+
+
+</body>
+
+</html>

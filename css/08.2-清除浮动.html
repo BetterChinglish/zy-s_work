@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>think</title>
+</head>
+<style>
+    h5 {
+        display: block;
+        padding: 50px;
+        margin: 30px;
+        color: orange;
+        background-color: #f5f5f5ff;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+    
+    h5:hover {
+        box-shadow: 5px 3px 5px 1px rgba(146, 138, 138, 0.397);
+    }
+</style>
+
+<body>
+    <div>
+        <h5>为什么需要清除浮动</h5>
+        <p>
+            父级盒子在很多情况下不方便给高度，但子盒子浮动又不占有位置，导致父级盒子高度为0，影响下面的标准流盒子。
+        </p>
+
+    </div>
+    <div>
+        <h5>清除浮动的本质</h5>
+        <p>清除浮动造成的影响
+            <br>——如果父盒子本身有高度则不需要清除浮动
+            <br>——清除浮动之后，父级就会根据浮动的盒子自动检测高度，就不会影响以下的标准流了。
+        </p>
+
+    </div>
+    <div>
+        <h5>语法：
+            <br>选择器 { clear：属性值； }
+            <br>——left 不允许左侧=有浮动
+            <br>——right 不允许右侧有浮动
+            <br>——both 同时清除左右
+        </h5>
+    </div>
+    <div>
+        <h4>
+            清除浮动的方法
+        </h4>
+        <h5>
+            1、额外标签法
+            <br>2、父级添加overflow属性
+            <br>3、父级添加after伪元素
+            <br>4、父级添加双伪元素
+        </h5>
+    </div>
+    <div>
+        <h5>额外标签法
+            <br>————————————
+            <br>又称隔墙法，在浮动元素末尾添加一个空标签，例如(此处无法显示)
+            <div style=" clear:both"></div>或者其他标签，例如(此处无法显示)<br> ·优点：通俗易懂，方便书写
+            <br>·缺点：添加许多无意义标签，结构化较差
+            <br>··注意：新的空标签必须是块级元素，行内块元素不行。
+        </h5>
+    </div>
+    <div>
+        <h5>
+            父级添加overflow
+            <br>————————————
+            <br>给父元素添加overflow属性，设置为hidden，auto或scroll
+            <br>·优点：代码简洁
+            <br>·缺点：无法显示溢出部分
+        </h5>
+    </div>
+    <div>
+        <h5>
+            after伪元素法
+            <br>————————————
+            <br>类似于堵住后面
+            <br>(不熟,建议回头练习)
+        </h5>
+    </div>
+    <div>
+        <h5>
+            双伪元素清除浮动
+            <br>————————————
+            <br>类似于前后截堵
+            <br>找到父元素添加上clearfix，然后和after一样
+            <br>·优点：代码简洁
+            <br>·缺点：照顾低版本浏览器
+            <br>··代表网站：小米、腾讯
+        </h5>
+    </div>
+</body>
+
+</html>

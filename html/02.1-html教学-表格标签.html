@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格标签</title>
+</head>
+
+<body>
+    <!-- 所有的表格内容都要安排在<table></table>中间 -->
+    <!-- <tr></tr>表示表格一行，<td></td>表示表格内的单独单元格 -->
+    <!-- <th></th>为表头单元格标签，一般位于首行，加粗居中显示 -->
+
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+        </tr>
+        <tr>
+            <td>未知</td>
+            <td>女</td>
+            <td>3</td>
+        </tr>
+
+
+
+    </table>
+    <!-- 表格属性实际开发不常用，通过css设置 ,此处作为练习举例-->
+    <table align="center" border="1" cellpadding="20" cellspacing="0" width="500">
+        <thead>
+            <tr>
+                <th>属性名</th>
+                <th>属性值</th>
+                <th>描述</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>align</td>
+                <td>left,center,right</td>
+                <td>规定表格相对周围元素的对齐方式</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>1或""</td>
+                <td>规定表格单元是否拥有边框,默认为没有<a href="https://baike.baidu.com/item/%E8%BE%B9%E6%A1%86/7166650?fr=aladdin">边框</a></td>
+            </tr>
+            <tr>
+                <td>cellpadding</td>
+                <td>像素值</td>
+                <td>规定单元边缘与其内容之间的空白,默认一像素</td>
+            </tr>
+            <tr>
+                <td>cellspacing</td>
+                <td>像素值</td>
+                <td>规定单元格之间的空白,默认二像素</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>像素值或百分比</td>
+                <td>规定表格的宽度</td>
+            </tr>
+        </tbody>
+        <!-- <thead></thead>表示表格头部区域 -->
+        <!-- <tbody></tbody>表示表格的主体区域 -->
+        <!-- 二者可以使收缩表格，让界面更整洁，更好的表示表格的意义 -->
+        <!-- 同样，在<table></table>里面使用 -->
+
+
+
+        <!-- 合并单元格 -->
+        <!-- 跨行合并：rowspan="合并单元格的个数" 竖着 -->
+        <!-- 跨列合并：colspan="合并单元格的个数" 横着-->
+        <!-- 写合并代码时，要寻找目标单元格，跨行合并时，在最上，跨列合并时，在最左 -->
+        <table align="center" border="1" cellpadding="20" cellspacing="0" width="500">
+            <tr>
+                <td colspan="3" align="center">班级花名册</td>
+            </tr>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+            <tr>
+                <td>未知</td>
+                <td>女</td>
+                <td>3</td>
+            </tr>
+
+
+
+        </table>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型外边距</title>
+</head>
+<style>
+    .nav {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(199, 163, 175);
+        margin: 10px auto;
+        background-image: url(2335.jpg);
+    }
+    
+    .one {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(199, 163, 175);
+        margin: 10px auto;
+        background-image: url(2334.jpg);
+    }
+</style>
+
+<body>
+    <div class="nav">
+        margin属性用于控制外边框，即盒子和盒子间的距离 margin-方位名词：px;
+    </div>
+    <div class="nav">
+        恰当地使用可以合并外边框 "即，尝试尽量只给一个盒子添加margin值
+    </div>
+    <div class="one">
+        外边距可以让块级盒子水平居中，但必须满足两个条件：
+        <br>1·盒子必须指定宽度
+        <br>2·盒子左右外边距都设置为auto
+        <br>3·以上是块级元素
+        <br>4·行内或行内块元素居中添加text-ailgn:center即可
+    </div>
+    <div class="one">
+        外边距合并
+        <br>使用margin定义块元素的垂直外边距时，可能会出现外边距的合并
+        <br>对于两个嵌套（父子）关系的块元素，父元素有上边距同时子元素也有上边距，此时父元素会塌陷较大外边距值
+        <br>解决方法
+        <br>1·为父元素定义上边框
+        <br>2·为父元素定义上内边框
+        <br>3·为父元素添加overflow:hidden
+    </div>
+    <div class="one">
+        清除内外边框
+        <br>很多浏览器都带有默认的边距值，在布局之前要清除掉
+        <br>*{ badding：0（清除内边距） margin：0（清除外边距） }
+        <br>css的第一行代码
+        <br>行内元素为了照顾兼容性，尽量只设置左右内外边距，不要设置上下，但是转化为块级和行内块元素就可以了
+    </div>
+</body>
+
+</html>

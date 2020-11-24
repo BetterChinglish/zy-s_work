@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css的三大特性</title>
+</head>
+
+<body>
+    <div>层叠性
+        <br>后来居上，如果样式存在冲突，则离的远的会被覆盖</div>
+    <div>继承性
+        <br>子标签会继承父标签的某些样式，如文本颜色字号，比如div标签里面的p标签
+        <br>恰当地使用可以简化代码
+        <br>行高的继承
+        <!-- body {
+            font：12px/1.5 microsoft yahei；
+        } -->
+        <br>12px为字体大小，1.5则为行高是字体大小的1.5倍（可以不更单位，也可以直接写具体行高数值）
+        <br> 利用继承性
+        <br>body里面的标签文本都会有字体大小1.5倍的行高
+    </div>优先级
+    <br>当同一个元素指定多个选择器，就会产生优先级
+    <!-- <style>
+        div {
+            color: pink！important;
+        }
+        .test{
+            color: powderblue;
+        }
+    </style>
+    <div class="test" style="color: blue">喜欢爸爸</div> -->
+    <br>如果选择器相同，则执行层叠性
+    <br>如果选择器不同，则按权重执行
+    <br>选择器权重：！important>行内样式style>ID选择器>类选择器，伪类选择器>元素选择器>继承或*
+    <br>如上标注
+    <br>权重叠加，出现在有复合选择器时，需要计算权重，权重叠加不会有进位
+    <br>分类描述的越细致，优先级越高，例如ul>li要大于li
+
+    <div>
+        <br>
+    </div>
+</body>
+
+</html>
